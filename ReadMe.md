@@ -2,6 +2,7 @@ BDD Automation Framework
   
   The framework is created using standard Maven project structure and below are the components.
   -- The src/main/java folder contains the reusable functions and has 3 packages
+  
      1) com.frmwrk.base - It has the following classes 
         - The BasePage class which contains the selenium reusable functions
         - The RestClientAPI class which contains basic functions for connecting to Jira and updating status in Jira
@@ -13,11 +14,12 @@ BDD Automation Framework
         - Database related functions like connection, disconnection and data fetch
         - The TestLogger class contains the slf4j log initialization 
   
-  -- The src/main/resources folder contains the log4j properties which can be customized based on need. There are 2 files,
-     first is for html log file customization and second is for text log file customization. In the framework we are using
-     html file for providing the log
+  -- The src/main/resources folder contains the log4j properties which can be customized based on need. 
+     There are 2 files, first is for html log file customization and second is for text log file customization. In the framework we are using
+     html file for providing log
   
   -- The src/test/java contains the test related functions
+     
      1) com.frmwrk.pages - It will contain the selenium page objects. The page objects extend the base page and the elements of 
        the pages are defined using @FindBy annotation and initialized using the PageFactory notiation and sample is 
        given below
@@ -28,6 +30,8 @@ BDD Automation Framework
            PageFactory.initElements(driver, this);
            }
        Refer the GoogleSearchPage sample class
+       
+      
       2) com.frmwrk.test - This contains the cucucumber runner classes (browser and headless) and standalone TestNG test class
          
          For selenium webdriver tests (i.e.browser) option we are using selenium grid for execution. So before executing the tests, 
@@ -44,11 +48,12 @@ BDD Automation Framework
  
  
  -- The src/test/resources as the name suggests contains the test resources
+      
       1) Feature folder contains the BDD feature files and tester can create subfolders within that to organize the BDD Feature files
       2) InputData folder 
-         - contains the DriverData sheet which contains the execution sequence. It has 3 columns Execution Status, FeatureName and 
-           Tags. 
-           Execution Status can be Y/N, where Y means execute the row and N means skip the row for execution and is a mandatory field.
+         - contains the DriverData sheet which contains the execution sequence. 
+         It has 3 columns Execution Status, FeatureName and Tags. 
+           Execution Status - can be Y/N, where Y means execute the row and N means skip the row for execution and is a mandatory field.
            FeatureName - Name of the feature to be executed which is relative path from src as given below. It is a mandatory field.
                         src/test/resources/features/GoogleSearch.feature
            Tags are optional but if specified then tester has ensure the tag is specified in the FeatureFile being executed else runtime
@@ -60,7 +65,7 @@ BDD Automation Framework
          - The second sheet is the testdata sheet which contains ScenarioDataSequenceNo which corresponds to the data sequence given in
            the featurefile and samples are given below. The scenario name should follow this syntax given the sample below
            
-           Scenario Outline: StoryID SmokeScenario
+        Scenario Outline: StoryID SmokeScenario
   				Given user is on google search page
   				When enter "<srchString>" text into search field
   				Then the browser title should have "<outString>"
@@ -80,13 +85,13 @@ BDD Automation Framework
           The data in the testdata sheet is provided as below
           
           ScenarioName-DataSequenceNo
- 			SmokeScenario1
- 			RegressionScenario1
- 			SmokeScenario2
+ 			    SmokeScenario1
+ 			    RegressionScenario1
+ 			    SmokeScenario2
           
           The ParmCount field in the test data sheet is used to provide the parameter count in the scenario.
-          
           There are 20 parameters defined but more can be provided per scenario based on requirement.
+          
       3) atu.properties - for providing ATU properties
       4) db.properties - for database connectivity related things
       5) global.properties - for global configurations
@@ -95,6 +100,7 @@ BDD Automation Framework
       8) ATU Reports Jar and logo which is used in the ATU reports
  
  ***************************************Setup required for marking scenarios as manual scenarios******************
+ 
  1) Use the tag @Manual for the scenario which needs to be executed manually
  2) Code the scenario as given below:
  
