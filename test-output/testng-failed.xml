@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.frmwrk.test.RunTestNGTest">
+        <methods>
+          <include name="afterclass"/>
+          <include name="Execute_test" invocation-numbers="0"/>
+          <include name="beforeclass"/>
+        </methods>
+      </class> <!-- com.frmwrk.test.RunTestNGTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

@@ -1,0 +1,1 @@
+node %userprofile%\AppData\Roaming\npm\node_modules\appium\build\lib\main.js --nodeconfig "D:\Mayur project\QuantumFramework\QuantumTestFramework\src\test\resources\appium_node_config.json" -p 4723
