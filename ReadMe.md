@@ -42,6 +42,7 @@ BDD Automation Framework
       3) com.frmwrk.test.steps - This class will contain the glue codes or step definitions and there is CommonMethods class
          which contains the hooks for Cucumber
  
+ 
  -- The src/test/resources as the name suggests contains the test resources
       1) Feature folder contains the BDD feature files and tester can create subfolders within that to organize the BDD Feature files
       2) InputData folder 
