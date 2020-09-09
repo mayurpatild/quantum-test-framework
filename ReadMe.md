@@ -1,5 +1,13 @@
-BDD Automation Framework
-  
+# Hybrid Automation Framework ⚡️ 🚀
+
+## Technologies used 🛠️
+
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+---
+
   The framework is created using standard Maven project structure and below are the components.
   -- The src/main/java folder contains the reusable functions and has 3 packages
   
@@ -21,17 +29,16 @@ BDD Automation Framework
   -- The src/test/java contains the test related functions
      
      1) com.frmwrk.pages - It will contain the selenium page objects. The page objects extend the base page and the elements of 
-       the pages are defined using @FindBy annotation and initialized using the PageFactory notiation and sample is 
-       given below
-       	@FindBy(name="q") WebElement SrchText;
-           @FindBy(name="btnG") WebElement btnSearch;
-           public GoogleSearchPage(RemoteWebDriver driver) {
-           super(driver);
-           PageFactory.initElements(driver, this);
-           }
-       Refer the GoogleSearchPage sample class
-       
-      
+        the pages are defined using @FindBy annotation and initialized using the PageFactory notiation and sample is 
+        given below
+       	  @FindBy(name="q") WebElement SrchText;
+             @FindBy(name="btnG") WebElement btnSearch;
+             public GoogleSearchPage(RemoteWebDriver driver) {
+                super(driver);
+                PageFactory.initElements(driver, this);
+             }
+        Refer the GoogleSearchPage sample class
+           
       2) com.frmwrk.test - This contains the cucucumber runner classes (browser and headless) and standalone TestNG test class
          
          For selenium webdriver tests (i.e.browser) option we are using selenium grid for execution. So before executing the tests, 
@@ -43,6 +50,7 @@ BDD Automation Framework
          java -jar selenium-server-standalone-2.53.0.jar -role node -hub http://localhost:4447/grid/register -port 5555
          
          Similarly for Chrome node update the browserName=chrome and for firefox update is to firefox
+         
       3) com.frmwrk.test.steps - This class will contain the glue codes or step definitions and there is CommonMethods class
          which contains the hooks for Cucumber
  
@@ -50,6 +58,7 @@ BDD Automation Framework
  -- The src/test/resources as the name suggests contains the test resources
       
       1) Feature folder contains the BDD feature files and tester can create subfolders within that to organize the BDD Feature files
+      
       2) InputData folder 
          - contains the DriverData sheet which contains the execution sequence. 
          It has 3 columns Execution Status, FeatureName and Tags. 
@@ -99,7 +108,7 @@ BDD Automation Framework
       7) The Chrome, IE and PhantomJs drivers
       8) ATU Reports Jar and logo which is used in the ATU reports
  
- ***************************************Setup required for marking scenarios as manual scenarios******************
+ ************************Setup required for marking scenarios as manual scenarios******************
  
  1) Use the tag @Manual for the scenario which needs to be executed manually
  2) Code the scenario as given below:
@@ -112,6 +121,7 @@ BDD Automation Framework
  
  Just include the Scenario line and comment the steps in the scenario using #. This is will ensure that the manual
  tags appear in the cucumber report
+ 
  *****************************************************************************************************************
 
 
