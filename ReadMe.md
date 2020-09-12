@@ -1,6 +1,9 @@
 # Hybrid Automation Framework ⚡️ 🚀
 
 ## Technologies used 🛠️
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
 Appium
 Selenium Webdriver/Grid
 Java
@@ -118,7 +121,7 @@ Log4j
       7) The Chrome, IE and PhantomJs drivers
       8) ATU Reports Jar and logo which is used in the ATU reports
  
- ************************Setup required for marking scenarios as manual scenarios******************
+ Setup required for marking scenarios as manual scenarios******************
  
       1) Use the tag @Manual for the scenario which needs to be executed manually
       2) Code the scenario as given below:
@@ -137,7 +140,10 @@ Log4j
  *****************************************************************************************************************
 
 
- ***************************************Setup required for Appium tests*******************************************
+ Setup required for Appium tests
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
  1) Download and install node.js
  2) npm install -g appium
  *****************************************************************************************************************
