@@ -1,6 +1,15 @@
 # Hybrid Automation Framework ⚡️ 🚀
 
 ## Technologies used 🛠️
+Appium
+Selenium Webdriver/Grid
+Java
+TestNG
+Maven
+ATU Reports
+Cucumber-BDD
+Log4j
+
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
@@ -112,7 +121,7 @@
  
  1) Use the tag @Manual for the scenario which needs to be executed manually
  2) Code the scenario as given below:
- 
+ --
  @Manual
   Scenario: StoryID ManualScenario
  #    Given user is on google search page
