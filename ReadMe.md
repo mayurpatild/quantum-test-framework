@@ -4,15 +4,15 @@
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
-Appium
-Selenium Webdriver/Grid
-Java
-JavaScript
-TestNG
-Maven
-ATU Reports
-Cucumber-BDD
-Log4j
+   1) Appium
+   2) Selenium Webdriver/Grid
+   3) Java
+   4) JavaScript
+   5) TestNG
+   6) Maven
+   7) ATU Reports
+   8) Cucumber-BDD
+   9) Log4j
 
 
 <!-- markdownlint-enable -->
@@ -144,6 +144,6 @@ Log4j
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
- 1) Download and install node.js
- 2) npm install -g appium
+    1) Download and install node.js
+    2) npm install -g appium
  *****************************************************************************************************************
