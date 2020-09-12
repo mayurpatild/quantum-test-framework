@@ -118,16 +118,16 @@ Log4j
       7) The Chrome, IE and PhantomJs drivers
       8) ATU Reports Jar and logo which is used in the ATU reports
  
- ************************Setup required for marking scenarios as manual scenarios******************
+ --************************Setup required for marking scenarios as manual scenarios******************
  
  1) Use the tag @Manual for the scenario which needs to be executed manually
  2) Code the scenario as given below:
- --
- @Manual
-  Scenario: StoryID ManualScenario
-     Given user is on google search page
-     When enter "Parm-1" text into search field
-     Then the browser title should have "Parm-2"     
+ 
+    @Manual
+     Scenario: StoryID ManualScenario
+        Given user is on google search page
+        When enter "Parm-1" text into search field
+        Then the browser title should have "Parm-2"     
  
  Just include the Scenario line and comment the steps in the scenario using #. This is will ensure that the manual
  tags appear in the cucumber report
