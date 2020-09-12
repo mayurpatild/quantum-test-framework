@@ -4,6 +4,7 @@
 Appium
 Selenium Webdriver/Grid
 Java
+JavaScript
 TestNG
 Maven
 ATU Reports
@@ -124,9 +125,9 @@ Log4j
  --
  @Manual
   Scenario: StoryID ManualScenario
- #    Given user is on google search page
- #    When enter "Parm-1" text into search field
- #    Then the browser title should have "Parm-2"     
+     Given user is on google search page
+     When enter "Parm-1" text into search field
+     Then the browser title should have "Parm-2"     
  
  Just include the Scenario line and comment the steps in the scenario using #. This is will ensure that the manual
  tags appear in the cucumber report
